@@ -60,7 +60,7 @@ That is indeed not my purpose with my personal GitHub page. My projects that I c
   <summary><strong>Full Skillset</strong></summary>
 
 ### 🧵 Languages
-Java, Python, C, Bash, JSON, Fortran, CSS, JavaScript, Markdown Formatting
+Java, Python, C, Bash, Fortran, NASM, JavaScript, CSS, JSON, Markdown Formatting, LaTeX
 (*...and probably a few others I’ve touched and forgotten!*)
 
 ---
@@ -76,7 +76,7 @@ Game design, self-made 2D engines (Java-based), turn-based mechanics, UI/UX prot
 ---
 
 ### 🖋️ Creative & Writing
-Narrative writing, worldbuilding, dialogue systems, branching storylines, lore frameworks
+Narrative writing, worldbuilding, dialogue systems, branching storylines, lore frameworks, fiction writing
 
 ---
 
@@ -86,6 +86,6 @@ Leadership of development teams, project coordination, collaborative work in ope
 ---
 
 ### ✨ Other Cool Stuff
-Shell scripting, general programming concepts (OOP, data structures, memory, etc), legal aspects of licensing (incl. drafting custom licenses!)
+Shell scripting, general programming concepts (OOP, data structures, memory, etc), legal aspects of licensing (incl. drafting custom licenses!), creation of vector fonts
 
 </details>
