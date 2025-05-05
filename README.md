@@ -51,6 +51,11 @@ That is indeed not my purpose with my personal GitHub page. My projects that I c
 - **Description:** A joke idea. My plan was to be making a Turing Complete decoder of a custom-made esoteric programming language, all done in JSON files! Some of it is slightly more low-level than modern languages, such as explicit separation of sections by vars and real code, and closing the code at an `end 0` signal.
 - **Note:** I have not yet made a detailed README for it, but I will soon.
 
+### 🔢 Math Sorter
+
+- **Link:** [math-sorter](https://github.com/dedetive/math-sorter)
+- **Description:** Functions that sorts individual digits of the input, but all done in raw mathematics instead of programming languages. There's a function for descending and ascending orders and an utility function to get the reverse of the input.
+
 </details>
 
 ---
