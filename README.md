@@ -8,6 +8,7 @@
   - [🎮 Misle](#-misle)
   - [⚙️ Dotfiles](#%EF%B8%8F-dotfiles)
   - [🌀 Json Coding](#-json-coding)
+  - [🔢 Math Sorter](#-math-sorter)
 - [🛠️ Skills](#%EF%B8%8F-skills)
   - [🧵 Languages](#-languages)
   - [🧰 Tools & Environments](#-tools--environments)
