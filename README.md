@@ -1,18 +1,22 @@
 # 🐸 dedetive
 
-## 📜 Table of Contents
+<details>
+  <summary><strong>📜 Table of Contents</strong></summary>
+  
 - [📌 Introduction](#-introduction)
 - [🧪 Projects](#-projects)
   - [🎮 Misle](#-misle)
-  - [⚙️ Dotfiles](#-dotfiles)
+  - [⚙️ Dotfiles](#%EF%B8%8F-dotfiles)
   - [🌀 Json Coding](#-json-coding)
-- [🛠️ Skills](#-skills)
+- [🛠️ Skills](#%EF%B8%8F-skills)
   - [🧵 Languages](#-languages)
   - [🧰 Tools & Environments](#-tools--environments)
   - [🎲 Game Development](#-game-development)
-  - [🖋️ Creative & Writing](#-creative--writing)
+  - [🖋️ Creative & Writing](#%EF%B8%8F-creative--writing)
   - [🤝 Soft Skills & Management](#-soft-skills--management)
   - [✨ Other Cool Stuff](#-other-cool-stuff)
+  
+</details>
 
 ---
 
@@ -23,7 +27,9 @@ That is indeed not my purpose with my personal GitHub page. My projects that I c
 
 ---
 
-## 🧪 Projects 
+## 🧪 Projects
+<details>
+  <summary><strong>Main Projects</strong></summary>
 
 ### 🎮 Misle
 
@@ -45,12 +51,16 @@ That is indeed not my purpose with my personal GitHub page. My projects that I c
 - **Description:** A joke idea. My plan was to be making a Turing Complete decoder of a custom-made esoteric programming language, all done in JSON files! Some of it is slightly more low-level than modern languages, such as explicit separation of sections by vars and real code, and closing the code at an `end 0` signal.
 - **Note:** I have not yet made a detailed README for it, but I will soon.
 
+</details>
+
 ---
 
 ## 🛠️ Skills
+<details>
+  <summary><strong>Full Skillset</strong></summary>
 
 ### 🧵 Languages
-Java, Python, C, Bash, JSON, Fortran, CSS, JavaScript  
+Java, Python, C, Bash, JSON, Fortran, CSS, JavaScript, Markdown Formatting
 (*...and probably a few others I’ve touched and forgotten!*)
 
 ---
@@ -77,3 +87,5 @@ Leadership of development teams, project coordination, collaborative work in ope
 
 ### ✨ Other Cool Stuff
 Shell scripting, general programming concepts (OOP, data structures, memory, etc), legal aspects of licensing (incl. drafting custom licenses!)
+
+</details>
