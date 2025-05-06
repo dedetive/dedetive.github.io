@@ -74,7 +74,7 @@ Java, Python, C, Bash, Fortran, NASM, JavaScript, CSS, JSON, Markdown Formatting
 ---
 
 ### 🧰 Tools & Environments
-Git, Linux (Sway/i3), VSCode, JetBrains IDEs, NeoVim
+Git, Linux (Sway/i3), VSCode, JetBrains IDEs, NeoVim, nano
 
 ---
 
