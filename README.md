@@ -32,6 +32,7 @@ That is indeed not my purpose with my personal GitHub page. My projects that I c
 
 ### 🎮 Misle (Main project)
 
+*This is my main ongoing project, actively maintained and constantly improved.*
 - **Link:** [misle-java](https://github.com/dedetive/misle-java)
 - **Description:** An open-source game, more specifically a turn-based, 2D, top-down RPG with (to come) extensive storytelling, where every choice matters.
 
