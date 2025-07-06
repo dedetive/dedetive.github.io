@@ -29,15 +29,17 @@ That is indeed not my purpose with my personal GitHub page. My projects that I c
 ---
 
 ## 🧪 Projects
-<details>
-  <summary><strong>Main Projects</strong></summary>
 
-### 🎮 Misle
+### 🎮 Misle (Main project)
 
 - **Link:** [misle-java](https://github.com/dedetive/misle-java)
 - **Description:** An open-source game, more specifically a turn-based, 2D, top-down RPG with (to come) extensive storytelling, where every choice matters.
 
----
+--- 
+
+<details>
+  <summary><strong>Other Projects</strong></summary>
+
 
 ### ⚙️ Dotfiles
 
