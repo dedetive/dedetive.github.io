@@ -1,0 +1,7 @@
+---
+layout: post
+title:  wow
+date:   2025-10-24 15:18:59 -0300
+categories: [fun]
+---
+this is kinda cool actually
