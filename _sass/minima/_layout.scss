@@ -269,6 +269,6 @@
     height: 2px;
     color: $grey-color-dark;
     background-color: $grey-color-dark;
-    margin-left: calc(51% - (#{$content-width} / 2));
-    margin-right: calc(51% - (#{$content-width} / 2));
+    margin-left: max(calc(51.75% - (#{$content-width} / 2)), 0%);
+    margin-right: max(calc(51.75% - (#{$content-width} / 2)), 0%);
 }
