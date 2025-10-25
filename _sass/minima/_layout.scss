@@ -14,8 +14,7 @@
   font-family: "Adwaita Sans", sans-serif;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: 0.215em;
-  padding: 5px;
-  margin-bottom: -5px;
+  padding: max(5px, 0) max(5px, 0) max(5px, 0) 0;
   float: left;
 
   &,
