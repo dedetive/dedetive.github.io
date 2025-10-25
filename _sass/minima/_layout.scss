@@ -11,6 +11,7 @@
 .site-title {
   @include relative-font-size(2.3);
   font-weight: 300;
+  text-shadow: 0 0 3px white, 0 0 5px black;
   font-family: "Adwaita Sans", sans-serif;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: 0.215em;
