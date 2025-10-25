@@ -9,11 +9,11 @@
 }
 
 .site-title {
-  @include relative-font-size(2);
+  @include relative-font-size(2.3);
   font-weight: 300;
-  //font-variant: full-width;
+  font-family: "Adwaita Sans", sans-serif;
   line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: 1px;
+  letter-spacing: 0.215em;
   padding: 5px;
   margin-bottom: -5px;
   float: left;
