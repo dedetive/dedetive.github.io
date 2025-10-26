@@ -201,10 +201,12 @@
 
   > li {
     margin-bottom: $spacing-unit;
+    display: grid;
   }
 }
 
 .post-meta {
+  margin: 15px 0 0 0;
   font-size: $small-font-size;
   font-weight: 500;
   color: desaturate(lighten($background-color, 35%), 15%);
