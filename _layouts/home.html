@@ -23,7 +23,9 @@ layout: default
           </a>
         </h3>
         {%- if post.description -%}
-          {{ post.description }}
+          <span class="post-description">
+            {{ post.description }}
+          </span>
         {%- endif -%}
       </li>
       {%- endfor -%}

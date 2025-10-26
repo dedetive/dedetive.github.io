@@ -218,7 +218,10 @@
   @include relative-font-size(1.5);
 }
 
-
+.post-description {
+  margin: -15px 0 15px 0;
+  color: white;
+}
 
 /**
  * Posts
