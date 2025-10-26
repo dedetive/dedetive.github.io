@@ -268,8 +268,8 @@
   body hr {
     border: none;
     height: 2px;
-    color: $grey-color-dark;
-    background-color: $grey-color-dark;
+    color: lighten($background-color, 10%);
+    background-color: lighten($background-color, 10%);
     margin-left: calc(max(51.75% - (#{$content-width} / 2), 0%));
     margin-right: calc(max(51.75% - (#{$content-width} / 2), 0%));
 }
