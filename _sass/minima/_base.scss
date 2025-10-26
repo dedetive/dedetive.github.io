@@ -252,3 +252,17 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lighten($background-color, 6%);
+  border-radius: 20%;
+}
+
+::-webkit-scrollbar-track {
+  background-color: darken($background-color, 3%);
+}
