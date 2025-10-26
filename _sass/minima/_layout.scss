@@ -16,7 +16,6 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: 0.215em;
   padding: 5px 40px 50px 0;
-  margin-bottom: 20px;
   float: left;
 
   &,
@@ -219,7 +218,10 @@
   @include relative-font-size(1.5);
 }
 
-
+.post-description {
+  margin: -15px 0 15px 0;
+  color: white;
+}
 
 /**
  * Posts
