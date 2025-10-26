@@ -22,8 +22,8 @@ also heres jekyll itself:
 
 i hope that helps! :D
 
-meow
-
 i might write more later idk not now though im handling other stuff
 
 trans rights are humans rights
+
+Made on Oct 24, 2025
