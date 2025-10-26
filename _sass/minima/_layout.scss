@@ -280,6 +280,7 @@ hr {
 }
 
 .post-separator {
+  height: 1px;
   color: lighten($background-color, 4%);
   background-color: lighten($background-color, 4%);
 }
