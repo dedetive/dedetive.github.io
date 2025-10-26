@@ -15,7 +15,7 @@
   font-family: "Adwaita Sans", sans-serif;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: 0.215em;
-  padding: 5px 40px 50px 0;
+  padding: 5px 40px 20px 0;
   float: left;
 
   &,
@@ -192,6 +192,7 @@
 
 .post-list-heading {
   @include relative-font-size(2);
+  margin-bottom: 15px;
 }
 
 .post-list {
@@ -199,7 +200,7 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit * 1.4;
     display: grid;
   }
 }
@@ -213,13 +214,13 @@
 
 .post-link {
   display: block;
-  margin: 5px 0 5px 0;
+  margin: 0 0 5px 0;
   font-weight: 600;
   @include relative-font-size(1.5);
 }
 
 .post-description {
-  margin: -15px 0 15px 0;
+  margin: -12px 0 15px 0;
   color: white;
 }
 
