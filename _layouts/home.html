@@ -14,6 +14,7 @@ layout: default
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
+        <hr class="post-separator">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%m" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>

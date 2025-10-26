@@ -15,7 +15,8 @@
   font-family: "Adwaita Sans", sans-serif;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: 0.215em;
-  padding: 5px 5px 5px 0;
+  padding: 5px 40px 50px 0;
+  margin-bottom: 20px;
   float: left;
 
   &,
@@ -183,7 +184,6 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
   flex: 1;
 }
 
@@ -192,7 +192,7 @@
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(2);
 }
 
 .post-list {
@@ -201,16 +201,21 @@
 
   > li {
     margin-bottom: $spacing-unit;
+    display: grid;
   }
 }
 
 .post-meta {
+  margin: 15px 0 0 0;
   font-size: $small-font-size;
-  color: $grey-color;
+  font-weight: 500;
+  color: desaturate(lighten($background-color, 35%), 15%);
 }
 
 .post-link {
   display: block;
+  margin: 5px 0 5px 0;
+  font-weight: 600;
   @include relative-font-size(1.5);
 }
 
@@ -265,11 +270,17 @@
  * hr separators
  */
 
-  body hr {
+hr {
     border: none;
     height: 2px;
-    color: $grey-color-dark;
-    background-color: $grey-color-dark;
+    color: lighten($background-color, 40%);
+    background-color: saturate(lighten($background-color, 40%), 10%);
     margin-left: calc(max(51.75% - (#{$content-width} / 2), 0%));
     margin-right: calc(max(51.75% - (#{$content-width} / 2), 0%));
+}
+
+.post-separator {
+  height: 1px;
+  color: lighten($background-color, 4%);
+  background-color: lighten($background-color, 4%);
 }
