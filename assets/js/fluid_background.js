@@ -18,7 +18,7 @@ const draw = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
     // context.strokeStyle = "#374362";
     // context.lineWidth = 5;
-    // context.globalAlpha = 0.25;
+    context.globalAlpha = 0.25;
     for (const raindrop of frogs) {
         const width = frogImage.width * (raindrop.size / 100);
         const height = frogImage.height * (raindrop.size / 100);
@@ -42,13 +42,14 @@ const draw = () => {
 
 const update = (delta) => {
     if (Math.random() < delta * 0.5) {
-        const size = 50 + Math.random() * 50;
+        const isHuge = Math.random() > 0.99;
+        const size = 100 + Math.random() * 700 + (isHuge ? Math.random() * 3000 : 0);
         const height = frogImage.width * (size / 100);
         frogs.push({
             x: Math.random() * canvas.width,
             y: canvas.height + height,
             size,
-            speed: 50 + Math.random() * 50,
+            speed: (50 + Math.random() * 50) / Math.max(size / 350, 1),
             rotation: Math.random() * Math.PI * 2,
             rotationSpeed: (Math.random() - 0.5) * 0.2,
         });
