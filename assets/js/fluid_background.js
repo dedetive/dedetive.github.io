@@ -40,14 +40,17 @@ const draw = () => {
     }
 };
 
-const update = (delta) => {
-    if (Math.random() < delta * 0.5) {
-        const isHuge = Math.random() > 0.99;
-        const size = 100 + Math.random() * 700 + (isHuge ? Math.random() * 3000 : 0);
+const update = (delta, skipHeight) => {
+    if (Math.random() < delta * (isFirstFrog ? 100 : 0.5)) {
+        const isHuge = !isFirstFrog && Math.random() > 0.99;
+        const size = 100 + Math.random() *
+            isFirstFrog ? 200 : 700 +
+        (isHuge ? Math.random() * 3000 : 0);
         const height = frogImage.width * (size / 100);
+        isFirstFrog = false;
         frogs.push({
             x: Math.random() * canvas.width,
-            y: canvas.height + height,
+            y: canvas.height + (skipHeight ? height / 16 : height),
             size,
             speed: (50 + Math.random() * 50) / Math.max(size / 350, 1),
             rotation: Math.random() * Math.PI * 2,
@@ -68,10 +71,11 @@ const update = (delta) => {
 };
 
 let lastTime = 0;
+let isFirstFrog = true;
 const loop = (time) => {
     const delta = (time - lastTime) / 1000;
     lastTime = time;
-    update(delta);
+    update(delta, isFirstFrog);
     draw();
     requestAnimationFrame(loop);
 };
