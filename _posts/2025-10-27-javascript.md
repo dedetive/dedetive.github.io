@@ -6,22 +6,22 @@ categories:
   - rant
 description: why just why
 ---
-May I ask why is the following `true`:
-
-```js
-100 * true ? 2 : 3 == 2
-```
-
-Oh no, sorry. It's not `true`.
-
-That's equal to `2`. 
-
-And what happens if you fix the loose `\==` and replace it with stricter `\=\==`? 
-
-Yeah, right: `2` again.
-
-Please don't tell me multiplication with a BOOLEAN actually has precedence over ternary evaluation??? 
-
-And don't even get me started on equality having lower precedence than a ternary.
-
-Gotta really love parentheses to make any useful calculation in js, huh.
+May I ask why is the following `true`:  
+  
+```js  
+100 * true ? 2 : 3 == 2  
+```  
+<br>  
+Oh no, sorry. That's not true.  
+<br><br>  
+That equals 2.  
+<br><br>  
+And what happens if you fix the loose == and replace it with stricter ===?  
+<br><br>  
+Yeah, right. 2 again.  
+<br><br>  
+Please don't tell me multiplication with a BOOLEAN actually has precedence over ternary evaluation???  
+<br><br>  
+And don't even get me started on equality having lower precedence than a ternary.  
+<br><br>  
+Gotta really love parentheses to make anything useful in js, huh.
