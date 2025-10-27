@@ -12,7 +12,7 @@ document.body.onresize();
 const frogs = [];
 
 const frogImage = new Image();
-frogImage.src = "/assets/frog_transparent_bg_small.png";
+frogImage.src = "/assets/frog_transparent_bg_naked.png";
 
 const draw = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -20,8 +20,8 @@ const draw = () => {
     // context.lineWidth = 5;
     context.globalAlpha = 0.25;
     for (const raindrop of frogs) {
-        const width = frogImage.width * (raindrop.size / 100);
-        const height = frogImage.height * (raindrop.size / 100);
+        const width = frogImage.width * (raindrop.size / 100) / 16;
+        const height = frogImage.height * (raindrop.size / 100) / 16;
         context.save();
         context.translate(raindrop.x, raindrop.y);
         context.rotate(raindrop.rotation);

@@ -282,3 +282,8 @@ canvas {
   pointer-events: none;
   z-index: -1;
 }
+
+.background-frogs-canvas {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+}
