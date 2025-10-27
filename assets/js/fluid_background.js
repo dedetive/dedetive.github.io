@@ -44,7 +44,7 @@ const update = (delta, skipHeight) => {
     if (Math.random() < delta * (isFirstFrog ? 100 : 0.5)) {
         const isHuge = !isFirstFrog && Math.random() > 0.99;
         const size = 100 + Math.random() *
-            isFirstFrog ? 200 : 700 +
+            (isFirstFrog ? 200 : 700) +
         (isHuge ? Math.random() * 3000 : 0);
         const height = frogImage.width * (size / 100);
         isFirstFrog = false;
