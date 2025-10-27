@@ -12,7 +12,7 @@ May I ask why is the following `true`:
 100 * true ? 2 : 3 == 2
 ```
 
-Oh no, sorry. 
+Oh no, sorry. It's not `true`.
 
 That's equal to `2`. 
 
