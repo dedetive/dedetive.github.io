@@ -9,7 +9,7 @@ document.body.onresize = () => {
 
 document.body.onresize();
 
-const frogs = [];
+let frogs = [];
 
 const frogImage = new Image();
 frogImage.src = "/assets/frog_transparent_bg_naked.png";
@@ -68,6 +68,7 @@ const update = (delta) => {
             i--;
         }
     }
+    localStorage.setItem("backgroundFrogsState", JSON.stringify(frogs));
 };
 
 let lastTime = 0;
@@ -80,7 +81,12 @@ const loop = (time) => {
     requestAnimationFrame(loop);
 };
 
-loop();
+const previousFrogs = JSON.parse(localStorage.getItem("backgroundFrogsState"));
+if (previousFrogs) {
+    frogs = previousFrogs;
+    isFirstFrog = false;
+}
+loop(0);
 
 /*
  * I assign full credits to Lu's https://github.com/TodePond/TodePondDotCom
