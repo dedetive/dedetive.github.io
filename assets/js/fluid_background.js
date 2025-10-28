@@ -50,7 +50,7 @@ const update = (delta) => {
         isFirstFrog = false;
         frogs.push({
             x: Math.random() * canvas.width,
-            y: canvas.height + size,
+            y: canvas.height + size / 6,
             size,
             speed: (50 + Math.random() * 50) / Math.max(size / 350, 1),
             rotation: Math.random() * Math.PI * 2,
