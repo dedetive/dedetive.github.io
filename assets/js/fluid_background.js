@@ -62,7 +62,7 @@ const update = (delta) => {
         const frog = frogs[i];
         frog.y -= frog.speed * delta;
         frog.rotation += frog.rotationSpeed * delta;
-        const height = frogImage.height * (frog.size / 100);
+        const height = frog.size / 6;
         if (frog.y < -height) {
             frogs.splice(i, 1);
             i--;
