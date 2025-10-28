@@ -41,7 +41,7 @@ const draw = () => {
 };
 
 const update = (delta) => {
-    if (Math.random() < delta * (isFirstFrog ? 100 : 0.5)) {
+    if (Math.random() < delta * (isFirstFrog ? 100 : (0.5 / ((Math.max(frogs.length, 1)) ** 2)))) {
         const isHuge = !isFirstFrog && Math.random() > 0.99;
         const size = 100 + Math.random() *
             (isFirstFrog ? 200 : 700) +
