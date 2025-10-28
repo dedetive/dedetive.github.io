@@ -82,7 +82,10 @@ const loop = (time) => {
 };
 
 const previousFrogs = JSON.parse(localStorage.getItem("backgroundFrogsState"));
-if (previousFrogs) frogs = previousFrogs;
+if (previousFrogs) {
+    frogs = previousFrogs;
+    isFirstFrog = false;
+}
 loop(0);
 
 /*
