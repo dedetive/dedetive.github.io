@@ -9,4 +9,24 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
   {%- endif -%}
+
+    <script>
+        (function() {
+            const themeKey = 'theme-preference';
+            const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+            let preference = localStorage.getItem(themeKey);
+            let theme = 'light';
+
+            if (preference === 'dark') {
+                theme = 'dark';
+            } else if (preference === null && darkQuery.matches) {
+                theme = 'dark';
+            }
+
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
 </head>

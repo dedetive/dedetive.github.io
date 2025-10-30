@@ -34,4 +34,26 @@
             <use xlink:href="{{ '/assets/misc-icons.svg#darkmode' | relative_url }}"></use>
         </svg>
     </label>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeKey = 'theme-preference';
+            const toggle = document.getElementById('dark-mode-toggle');
+            const htmlEl = document.documentElement;
+
+            if (htmlEl.classList.contains('dark-mode')) {
+                toggle.checked = true;
+            }
+
+            toggle.addEventListener('change', function() {
+                if (this.checked) {
+                    htmlEl.classList.add('dark-mode');
+                    localStorage.setItem(themeKey, 'dark');
+                } else {
+                    htmlEl.classList.remove('dark-mode');
+                    localStorage.setItem(themeKey, 'light');
+                }
+            });
+        });
+    </script>
 </header>

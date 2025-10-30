@@ -11,7 +11,7 @@
 .site-title {
   @include relative-font-size(2.3);
   font-weight: 300;
-  text-shadow: 0 0 3px white, 0 0 5px black;
+  text-shadow: 0 0 3px var(--title-shadow1-color), 0 0 5px var(--title-shadow2-color);
   font-family: "Adwaita Sans", sans-serif;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: 0.215em;
@@ -20,7 +20,7 @@
 
   &,
   &:visited {
-    color: $grey-color-light;
+    color: var(--grey-color-light);
   }
 }
 
@@ -37,11 +37,11 @@
   }
 
   .page-link {
-    color: $brand-color;
+    color: var(--brand-color);
     text-decoration: none;
 
     &:visited {
-      color: darken($brand-color, 15%);
+      color: var(--visited-link-color)
     }
     line-height: $base-line-height;
 
@@ -55,7 +55,7 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit * 0.5;
-    background-color: $background-color;
+    background-color: var(--background-color);
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -77,7 +77,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-light;
+        fill: var(--grey-color-light);
       }
     }
 
@@ -87,12 +87,11 @@
     }
 
     input:checked ~ .trigger {
-      display: flex;
-      background-color: lighten($background-color, 5%);
-      border-top: 2px solid $grey-color-dark;
-      border-left: 2px solid $grey-color-dark;
-      border-right: 2px solid $grey-color-dark;
-      border-bottom: 2px solid $grey-color-dark;
+      display: none;
+      border-top: 2px solid var(--grey-color-dark);
+      border-left: 2px solid var(--grey-color-dark);
+      border-right: 2px solid var(--grey-color-dark);
+      border-bottom: 2px solid var(--grey-color-dark);
       border-radius: 15% 15%;
       box-shadow: 0 0 5px black;
     }
@@ -119,7 +118,7 @@
   position: fixed;
   top: 1em;
   right: 1em;
-  fill: $brand-color;
+  fill: var(--brand-color);
   padding: 10px;
 }
 
@@ -145,7 +144,7 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
+  color: var(--grey-color);
   margin-left: -$spacing-unit * 0.5;
   @extend %clearfix;
 }
@@ -230,7 +229,7 @@
   margin: 15px 0 0 0;
   font-size: $small-font-size;
   font-weight: 500;
-  color: desaturate(lighten($background-color, 35%), 15%);
+  color: var(--post-meta-color);
 }
 
 .post-link {
@@ -242,7 +241,7 @@
 
 .post-description {
   margin: -12px 0 15px 0;
-  color: white;
+  color: var(--post-description-color);
 }
 
 /**
@@ -297,14 +296,12 @@
 hr {
     border: none;
     height: 2px;
-    color: lighten($background-color, 40%);
-    background-color: saturate(lighten($background-color, 40%), 10%);
+    background-color: var(--footer-separator-color);
     margin-left: calc(max(51.75% - (#{$content-width} / 2), 0%));
     margin-right: calc(max(51.75% - (#{$content-width} / 2), 0%));
 }
 
 .post-separator {
   height: 1px;
-  color: lighten($background-color, 4%);
-  background-color: lighten($background-color, 4%);
+  background-color: var(--post-separator-color);
 }
