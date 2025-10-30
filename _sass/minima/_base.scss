@@ -24,6 +24,7 @@ html {
   --post-meta-color: #{$light-post-meta-color};
   --post-description-color: #{$light-post-description-color};
   --post-separator-color: #{$light-post-separator-color};
+  --post-link-color: #{$light-post-link-color};
   --footer-separator-color: #{$light-footer-separator-color};
   --scrollbar-thumb-color: #{$light-scrollbar-thumb-color};
   --scrollbar-track-color: #{$light-scrollbar-track-color};
@@ -45,6 +46,7 @@ html.dark-mode {
   --post-meta-color: #{$dark-post-meta-color};
   --post-description-color: #{$dark-post-description-color};
   --post-separator-color: #{$dark-post-separator-color};
+  --post-link-color: #{$dark-post-link-color};
   --footer-separator-color: #{$dark-footer-separator-color};
   --scrollbar-thumb-color: #{$dark-scrollbar-thumb-color};
   --scrollbar-track-color: #{$dark-scrollbar-track-color};
