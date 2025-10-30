@@ -43,6 +43,9 @@
     &:visited {
       color: var(--visited-link-color)
     }
+    &:hover {
+      text-decoration: underline;
+    }
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
