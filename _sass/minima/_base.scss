@@ -10,6 +10,7 @@ dl, dd, ol, ul, figure {
 
 html {
   --text-color: #{$light-text-color};
+  --site-title-color: #{$light-site-title-color};
   --title-shadow1-color: #{$light-title-shadow1-color};
   --title-shadow2-color: #{$light-title-shadow2-color};
   --background-color: #{$light-background-color};
@@ -30,6 +31,7 @@ html {
 
 html.dark-mode {
   --text-color: #{$dark-text-color};
+  --site-title-color: #{$dark-site-title-color};
   --title-shadow1-color: #{$dark-title-shadow1-color};
   --title-shadow2-color: #{$dark-title-shadow2-color};
   --background-color: #{$dark-background-color};

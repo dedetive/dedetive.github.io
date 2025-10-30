@@ -13,6 +13,7 @@ $spacing-unit:     30px !default;
 $theme-switch-transition-span: 0.3;
 
 $dark-text-color: #ffffff !default;
+$dark-site-title-color: #bbe6eb !default;
 $dark-title-shadow1-color: #fff !default;
 $dark-title-shadow2-color: #000 !default;
 $dark-background-color: #293923 !default;
@@ -31,11 +32,12 @@ $dark-scrollbar-thumb-color: lighten($dark-background-color, 6%) !default;
 $dark-scrollbar-track-color: darken($dark-background-color, 3%) !default;
 
 $light-text-color: #000000 !default;
-$light-title-shadow1-color: #000 !default;
-$light-title-shadow2-color: #fff !default;
+$light-site-title-color: #006e16 !default;
+$light-title-shadow1-color: $light-site-title-color !default;
+$light-title-shadow2-color: $light-site-title-color !default;
 $light-background-color: #d0f4be !default;
 $light-brand-color: #2c3a26 !default;
-$light-visited-link-color: saturate(lighten($light-brand-color, 15%), 20%) !default;
+$light-visited-link-color: saturate(lighten($light-brand-color, 15%), 40%) !default;
 $light-grey-color: #1b1f93 !default;
 $light-grey-color-brighter: lighten($light-grey-color, 10%) !default;
 $light-grey-color-darker:  darken($light-grey-color, 20%) !default;
