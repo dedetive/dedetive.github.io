@@ -9,6 +9,7 @@
 }
 
 .site-title {
+  transition: none;
   @include relative-font-size(2.3);
   font-weight: 300;
   text-shadow: 0 0 3px var(--title-shadow1-color), 0 0 5px var(--title-shadow2-color);
