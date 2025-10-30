@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+    <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -26,5 +26,12 @@
         </div>
       </nav>
     {%- endif -%}
-  </div>
+    </div>
+
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+    <label for="dark-mode-toggle" aria-label="Toggle dark mode">
+        <svg aria-hidden="true" class="dark-mode-toggle-icon">
+            <use xlink:href="{{ '/assets/misc-icons.svg#darkmode' | relative_url }}"></use>
+        </svg>
+    </label>
 </header>

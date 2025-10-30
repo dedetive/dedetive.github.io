@@ -108,6 +108,21 @@
   }
 }
 
+.dark-mode-toggle {
+  display: none;
+}
+
+.dark-mode-toggle-icon {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  fill: $brand-color;
+  padding: 10px;
+}
+
 
 
 /**
