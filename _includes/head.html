@@ -13,19 +13,19 @@
     <script>
         (function() {
             const themeKey = 'theme-preference';
-            const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            const light = window.matchMedia('(prefers-color-scheme: light)');
 
             let preference = localStorage.getItem(themeKey);
-            let theme = 'light';
+            let theme = 'dark';
 
-            if (preference === 'dark') {
-                theme = 'dark';
-            } else if (preference === null && darkQuery.matches) {
-                theme = 'dark';
+            if (preference === 'light') {
+                theme = 'light';
+            } else if (preference === null && light.matches) {
+                theme = 'light';
             }
 
-            if (theme === 'dark') {
-                document.documentElement.classList.add('dark-mode');
+            if (theme === 'light') {
+                document.documentElement.classList.add('light-mode');
             }
         })();
     </script>

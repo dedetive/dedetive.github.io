@@ -43,17 +43,15 @@
             const toggle = document.getElementById('dark-mode-toggle');
             const htmlEl = document.documentElement;
 
-            if (htmlEl.classList.contains('dark-mode')) {
-                toggle.checked = true;
-            }
+            toggle.checked = !htmlEl.classList.contains('light-mode');
 
             toggle.addEventListener('change', function() {
                 if (this.checked) {
-                    htmlEl.classList.add('dark-mode');
-                    localStorage.setItem(themeKey, 'dark');
-                } else {
-                    htmlEl.classList.remove('dark-mode');
+                    htmlEl.classList.add('light-mode');
                     localStorage.setItem(themeKey, 'light');
+                } else {
+                    htmlEl.classList.remove('light-mode');
+                    localStorage.setItem(themeKey, 'dark');
                 }
             });
         });

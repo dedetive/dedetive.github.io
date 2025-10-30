@@ -9,28 +9,6 @@ dl, dd, ol, ul, figure {
 }
 
 html {
-  --text-color: #{$light-text-color};
-  --site-title-color: #{$light-site-title-color};
-  --title-shadow1-color: #{$light-title-shadow1-color};
-  --title-shadow2-color: #{$light-title-shadow2-color};
-  --background-color: #{$light-background-color};
-  --brand-color: #{$light-brand-color};
-  --visited-link-color: #{$light-visited-link-color};
-  --grey-color: #{$light-grey-color};
-  --grey-color-light: #{$light-grey-color-brighter};
-  --grey-color-dark: #{$light-grey-color-darker};
-  --code-background-color: #{$light-code-background-color};
-  --code-border-color: #{$light-code-border-color};
-  --post-meta-color: #{$light-post-meta-color};
-  --post-description-color: #{$light-post-description-color};
-  --post-separator-color: #{$light-post-separator-color};
-  --post-link-color: #{$light-post-link-color};
-  --footer-separator-color: #{$light-footer-separator-color};
-  --scrollbar-thumb-color: #{$light-scrollbar-thumb-color};
-  --scrollbar-track-color: #{$light-scrollbar-track-color};
-}
-
-html.dark-mode {
   --text-color: #{$dark-text-color};
   --site-title-color: #{$dark-site-title-color};
   --title-shadow1-color: #{$dark-title-shadow1-color};
@@ -50,6 +28,28 @@ html.dark-mode {
   --footer-separator-color: #{$dark-footer-separator-color};
   --scrollbar-thumb-color: #{$dark-scrollbar-thumb-color};
   --scrollbar-track-color: #{$dark-scrollbar-track-color};
+}
+
+html.light-mode {
+  --text-color: #{$light-text-color};
+  --site-title-color: #{$light-site-title-color};
+  --title-shadow1-color: #{$light-title-shadow1-color};
+  --title-shadow2-color: #{$light-title-shadow2-color};
+  --background-color: #{$light-background-color};
+  --brand-color: #{$light-brand-color};
+  --visited-link-color: #{$light-visited-link-color};
+  --grey-color: #{$light-grey-color};
+  --grey-color-light: #{$light-grey-color-brighter};
+  --grey-color-dark: #{$light-grey-color-darker};
+  --code-background-color: #{$light-code-background-color};
+  --code-border-color: #{$light-code-border-color};
+  --post-meta-color: #{$light-post-meta-color};
+  --post-description-color: #{$light-post-description-color};
+  --post-separator-color: #{$light-post-separator-color};
+  --post-link-color: #{$light-post-link-color};
+  --footer-separator-color: #{$light-footer-separator-color};
+  --scrollbar-thumb-color: #{$light-scrollbar-thumb-color};
+  --scrollbar-track-color: #{$light-scrollbar-track-color};
 }
 
 /**
