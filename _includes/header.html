@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+    <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -23,8 +23,39 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+
+          <label class="dark-mode-toggle-label" for="dark-mode-toggle" aria-label="Toggle dark mode">
+            <span class="dark-mode-toggle-label-text">Toggle colorscheme</span>
+            <svg aria-hidden="true" class="dark-mode-toggle-icon">
+                <use class="icon-dark" xlink:href="{{ '/assets/misc-icons.svg#dark-mode' | relative_url }}"></use>
+
+                <use class="icon-light" xlink:href="{{ '/assets/misc-icons.svg#light-mode' | relative_url }}"></use>
+            </svg>
+        </label>
         </div>
       </nav>
     {%- endif -%}
-  </div>
+    </div>
+
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeKey = 'theme-preference';
+            const toggle = document.getElementById('dark-mode-toggle');
+            const htmlEl = document.documentElement;
+
+            toggle.checked = htmlEl.classList.contains('light-mode');
+
+            toggle.addEventListener('change', function() {
+                if (this.checked) {
+                    htmlEl.classList.add('light-mode');
+                    localStorage.setItem(themeKey, 'light');
+                } else {
+                    htmlEl.classList.remove('light-mode');
+                    localStorage.setItem(themeKey, 'dark');
+                }
+            });
+        });
+    </script>
 </header>

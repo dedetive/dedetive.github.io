@@ -10,15 +10,47 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color: #ffffff !default;
-$background-color: #293923 !default;
-$brand-color: #cbf6cf !default;
+$theme-switch-transition-span: 0.4;
 
-$grey-color: #93d8e0 !default;
-$grey-color-light: lighten($grey-color, 10%) !default;
-$grey-color-dark:  darken($grey-color, 20%) !default;
+$dark-text-color: #ffffff !default;
+$dark-site-title-color: #bbe6eb !default;
+$dark-title-shadow1-color: #fff !default;
+$dark-title-shadow2-color: #000 !default;
+$dark-background-color: #293923 !default;
+$dark-brand-color: #cbf6cf !default;
+$dark-visited-link-color: desaturate(darken($dark-brand-color, 30%), 32%) !default;
+$dark-grey-color: #93d8e0 !default;
+$dark-grey-color-brighter: lighten($dark-grey-color, 10%) !default;
+$dark-grey-color-darker:  darken($dark-grey-color, 20%) !default;
+$dark-code-background-color: #20251a !default;
+$dark-code-border-color: saturate($dark-brand-color, 50%) !default;
+$dark-post-meta-color: desaturate(lighten($dark-background-color, 35%), 15%) !default;
+$dark-post-description-color: #fff !default;
+$dark-post-separator-color: lighten($dark-background-color, 4%) !default;
+$dark-post-link-color: #cbf6cf !default;
+$dark-footer-separator-color: saturate(lighten($dark-background-color, 40%), 10%) !default;
+$dark-scrollbar-thumb-color: lighten($dark-background-color, 6%) !default;
+$dark-scrollbar-track-color: darken($dark-background-color, 3%) !default;
 
-$code-background-color: #20251a !default;
+$light-text-color: #000000 !default;
+$light-site-title-color: #006e16 !default;
+$light-title-shadow1-color: $light-site-title-color !default;
+$light-title-shadow2-color: $light-site-title-color !default;
+$light-background-color: #c9f4be !default;
+$light-brand-color: #0c5f5f !default;
+$light-visited-link-color: desaturate(#602798, 7%) !default;
+$light-grey-color: #1b1f93 !default;
+$light-grey-color-brighter: lighten($light-grey-color, 10%) !default;
+$light-grey-color-darker:  darken($light-grey-color, 20%) !default;
+$light-code-background-color: #eaff96 !default;
+$light-code-border-color: saturate($light-brand-color, 50%) !default;
+$light-post-meta-color: saturate(darken($light-background-color, 55%), 80%) !default;
+$light-post-description-color: #000 !default;
+$light-post-separator-color: darken($light-background-color, 10%) !default;
+$light-post-link-color: #002889 !default;
+$light-footer-separator-color: saturate(darken($light-background-color, 45%), 30%) !default;
+$light-scrollbar-thumb-color: darken($light-background-color, 12%) !default;
+$light-scrollbar-track-color: lighten($light-background-color, 8%) !default;
 
 $table-text-align: left !default;
 
