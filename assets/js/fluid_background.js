@@ -9,7 +9,7 @@ document.body.onresize = () => {
 
 document.body.onresize();
 
-const frogs = [];
+let frogs = [];
 
 const frogImage = new Image();
 frogImage.src = "/assets/frog_transparent_bg_naked.png";
@@ -40,8 +40,8 @@ const draw = () => {
     }
 };
 
-const update = (delta, skipHeight) => {
-    if (Math.random() < delta * (isFirstFrog ? 100 : 0.5)) {
+const update = (delta) => {
+    if (Math.random() < delta * (isFirstFrog ? 100 : (0.5 / ((Math.max(frogs.length, 1)) ** 2)))) {
         const isHuge = !isFirstFrog && Math.random() > 0.99;
         const size = 100 + Math.random() *
             (isFirstFrog ? 200 : 700) +
@@ -50,7 +50,7 @@ const update = (delta, skipHeight) => {
         isFirstFrog = false;
         frogs.push({
             x: Math.random() * canvas.width,
-            y: canvas.height + (skipHeight ? height / 16 : height),
+            y: canvas.height + size / 6,
             size,
             speed: (50 + Math.random() * 50) / Math.max(size / 350, 1),
             rotation: Math.random() * Math.PI * 2,
@@ -62,12 +62,13 @@ const update = (delta, skipHeight) => {
         const frog = frogs[i];
         frog.y -= frog.speed * delta;
         frog.rotation += frog.rotationSpeed * delta;
-        const height = frogImage.height * (frog.size / 100);
+        const height = frog.size / 6;
         if (frog.y < -height) {
             frogs.splice(i, 1);
             i--;
         }
     }
+    localStorage.setItem("backgroundFrogsState", JSON.stringify(frogs));
 };
 
 let lastTime = 0;
@@ -75,12 +76,17 @@ let isFirstFrog = true;
 const loop = (time) => {
     const delta = (time - lastTime) / 1000;
     lastTime = time;
-    update(delta, isFirstFrog);
+    update(delta);
     draw();
     requestAnimationFrame(loop);
 };
 
-loop();
+const previousFrogs = JSON.parse(localStorage.getItem("backgroundFrogsState"));
+if (previousFrogs) {
+    frogs = previousFrogs;
+    isFirstFrog = false;
+}
+loop(0);
 
 /*
  * I assign full credits to Lu's https://github.com/TodePond/TodePondDotCom

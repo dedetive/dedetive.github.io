@@ -8,15 +8,57 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+html {
+  --text-color: #{$dark-text-color};
+  --site-title-color: #{$dark-site-title-color};
+  --title-shadow1-color: #{$dark-title-shadow1-color};
+  --title-shadow2-color: #{$dark-title-shadow2-color};
+  --background-color: #{$dark-background-color};
+  --brand-color: #{$dark-brand-color};
+  --visited-link-color: #{$dark-visited-link-color};
+  --grey-color: #{$dark-grey-color};
+  --grey-color-light: #{$dark-grey-color-brighter};
+  --grey-color-dark: #{$dark-grey-color-darker};
+  --code-background-color: #{$dark-code-background-color};
+  --code-border-color: #{$dark-code-border-color};
+  --post-meta-color: #{$dark-post-meta-color};
+  --post-description-color: #{$dark-post-description-color};
+  --post-separator-color: #{$dark-post-separator-color};
+  --post-link-color: #{$dark-post-link-color};
+  --footer-separator-color: #{$dark-footer-separator-color};
+  --scrollbar-thumb-color: #{$dark-scrollbar-thumb-color};
+  --scrollbar-track-color: #{$dark-scrollbar-track-color};
+}
 
+html.light-mode {
+  --text-color: #{$light-text-color};
+  --site-title-color: #{$light-site-title-color};
+  --title-shadow1-color: #{$light-title-shadow1-color};
+  --title-shadow2-color: #{$light-title-shadow2-color};
+  --background-color: #{$light-background-color};
+  --brand-color: #{$light-brand-color};
+  --visited-link-color: #{$light-visited-link-color};
+  --grey-color: #{$light-grey-color};
+  --grey-color-light: #{$light-grey-color-brighter};
+  --grey-color-dark: #{$light-grey-color-darker};
+  --code-background-color: #{$light-code-background-color};
+  --code-border-color: #{$light-code-border-color};
+  --post-meta-color: #{$light-post-meta-color};
+  --post-description-color: #{$light-post-description-color};
+  --post-separator-color: #{$light-post-separator-color};
+  --post-link-color: #{$light-post-link-color};
+  --footer-separator-color: #{$light-footer-separator-color};
+  --scrollbar-thumb-color: #{$light-scrollbar-thumb-color};
+  --scrollbar-track-color: #{$light-scrollbar-track-color};
+}
 
 /**
  * Basic styling
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  color: var(--text-color);
+  background-color: var(--background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -28,7 +70,20 @@ body {
   flex-direction: column;
 }
 
-
+/*
+ * Global theme transition
+ */
+*,
+*::before,
+*::after {
+  transition:
+          background-color #{$theme-switch-transition-span}s ease-in-out,
+          color #{$theme-switch-transition-span}s ease-in-out,
+          border-color #{$theme-switch-transition-span}s ease-in-out,
+          fill #{$theme-switch-transition-span}s ease-in-out,
+          box-shadow #{$theme-switch-transition-span}s ease-in-out,
+          text-shadow #{$theme-switch-transition-span}s ease-in-out;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -103,15 +158,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: var(--brand-color);
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: var(--visited-link-color);
   }
 
   &:hover {
-    color: $text-color;
+    color: var(--text-color);
     text-decoration: underline;
   }
 
@@ -129,8 +184,8 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  color: var(--grey-color);
+  border-left: 4px solid var(--grey-color-light);
   padding-left: $spacing-unit * 0.5;
   @include relative-font-size(1.125);
   letter-spacing: -1px;
@@ -149,9 +204,9 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid saturate($brand-color, 50%);
+  border: 1px solid var(--code-border-color);
   border-radius: 3px;
-  background-color: $code-background-color;
+  background-color: var(--code-background-color);
 }
 
 code {
@@ -212,7 +267,7 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill: var(--grey-color);
     padding-right: 5px;
     vertical-align: text-top;
 }
@@ -227,31 +282,32 @@ pre {
 
 /**
  * Tables
+ * NOTE: Currently disabled
  */
-table {
-  margin-bottom: $spacing-unit;
-  width: 100%;
-  text-align: $table-text-align;
-  color: lighten($text-color, 18%);
-  border-collapse: collapse;
-  border: 1px solid $grey-color-light;
-  tr {
-    &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
-    }
-  }
-  th, td {
-    padding: ($spacing-unit * 0.3333333333) ($spacing-unit * 0.5);
-  }
-  th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
-  }
-  td {
-    border: 1px solid $grey-color-light;
-  }
-}
+//table {
+//  margin-bottom: $spacing-unit;
+//  width: 100%;
+//  text-align: $table-text-align;
+//  color: lighten(var(--text-color), 18%);
+//  border-collapse: collapse;
+//  border: 1px solid var(--grey-color-light);
+//  tr {
+//    &:nth-child(even) {
+//      background-color: lighten(var(--grey-color-light), 6%);
+//    }
+//  }
+//  th, td {
+//    padding: ($spacing-unit * 0.3333333333) ($spacing-unit * 0.5);
+//  }
+//  th {
+//    background-color: lighten(var(--grey-color-light), 3%);
+//    border: 1px solid darken(var(--grey-color-light), 4%);
+//    border-bottom-color: darken(var(--grey-color-light), 12%);
+//  }
+//  td {
+//    border: 1px solid var(--grey-color-light);
+//  }
+//}
 
 /**
  * Scrollbar
@@ -262,12 +318,12 @@ table {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: lighten($background-color, 6%);
+  background-color: var(--scrollbar-thumb-color);
   border-radius: 20%;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: darken($background-color, 3%);
+  background-color: var(--scrollbar-track-color);
 }
 
 /**

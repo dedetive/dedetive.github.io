@@ -11,7 +11,7 @@
 .site-title {
   @include relative-font-size(2.3);
   font-weight: 300;
-  text-shadow: 0 0 3px white, 0 0 5px black;
+  text-shadow: 0 0 3px var(--title-shadow1-color), 0 0 5px var(--title-shadow2-color);
   font-family: "Adwaita Sans", sans-serif;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: 0.215em;
@@ -19,8 +19,9 @@
   float: left;
 
   &,
-  &:visited {
-    color: $grey-color-light;
+  &:visited,
+  &:hover {
+    color: var(--site-title-color);
   }
 }
 
@@ -37,11 +38,14 @@
   }
 
   .page-link {
-    color: $brand-color;
+    color: var(--brand-color);
     text-decoration: none;
 
     &:visited {
-      color: darken($brand-color, 15%);
+      color: var(--visited-link-color)
+    }
+    &:hover {
+      text-decoration: underline;
     }
     line-height: $base-line-height;
 
@@ -51,11 +55,10 @@
     }
   }
 
-  @include media-query($on-palm) {
+  @media (width <= 900px) {
     position: absolute;
     top: 9px;
     right: $spacing-unit * 0.5;
-    background-color: $background-color;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -77,7 +80,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-light;
+        fill: var(--grey-color-light);
       }
     }
 
@@ -87,14 +90,14 @@
     }
 
     input:checked ~ .trigger {
-      display: flex;
-      background-color: lighten($background-color, 5%);
-      border-top: 2px solid $grey-color-dark;
-      border-left: 2px solid $grey-color-dark;
-      border-right: 2px solid $grey-color-dark;
-      border-bottom: 2px solid $grey-color-dark;
+      display: block;
+      border-top: 2px solid var(--grey-color-dark);
+      border-left: 2px solid var(--grey-color-dark);
+      border-right: 2px solid var(--grey-color-dark);
+      border-bottom: 2px solid var(--grey-color-dark);
       border-radius: 15% 15%;
       box-shadow: 0 0 5px black;
+      background-color: var(--background-color);
     }
 
     .page-link {
@@ -105,10 +108,84 @@
         margin-right: 0;
       }
     }
+
+    .dark-mode-toggle-label-text {
+      display: flex;
+      padding: 5px 10px;
+      margin-right: 0;
+      line-height: $base-line-height;
+      color: var(--brand-color);
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      .dark-mode-toggle-icon {
+        display: none;
+      }
+    }
   }
 }
 
+@media (width > 900px) {
+  .dark-mode-toggle,
+  .dark-mode-toggle-label-text {
+    display: none;
+  }
 
+  .dark-mode-toggle-icon {
+    .icon-light {
+      display: none;
+    }
+
+    .icon-dark {
+      display: inline;
+    }
+
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    fill: var(--brand-color);
+    padding: 10px;
+  }
+
+  .light-mode {
+    .dark-mode-toggle-icon {
+      .icon-light {
+        display: inline;
+      }
+
+      .icon-dark {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (width <= 900px) {
+  .dark-mode-toggle {
+    display: none;
+  }
+
+  .dark-mode-toggle-icon {
+    .icon-light, .icon-dark {
+      display: none;
+    }
+
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+}
 
 /**
  * Site footer
@@ -130,7 +207,7 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
+  color: var(--grey-color);
   margin-left: -$spacing-unit * 0.5;
   @extend %clearfix;
 }
@@ -215,19 +292,21 @@
   margin: 15px 0 0 0;
   font-size: $small-font-size;
   font-weight: 500;
-  color: desaturate(lighten($background-color, 35%), 15%);
+  color: var(--post-meta-color);
 }
 
 .post-link {
+  transition: none;
   display: block;
   margin: 0 0 5px 0;
   font-weight: 600;
   @include relative-font-size(1.5);
+  color: var(--post-link-color)
 }
 
 .post-description {
   margin: -12px 0 15px 0;
-  color: white;
+  color: var(--post-description-color);
 }
 
 /**
@@ -282,14 +361,12 @@
 hr {
     border: none;
     height: 2px;
-    color: lighten($background-color, 40%);
-    background-color: saturate(lighten($background-color, 40%), 10%);
+    background-color: var(--footer-separator-color);
     margin-left: calc(max(51.75% - (#{$content-width} / 2), 0%));
     margin-right: calc(max(51.75% - (#{$content-width} / 2), 0%));
 }
 
 .post-separator {
   height: 1px;
-  color: lighten($background-color, 4%);
-  background-color: lighten($background-color, 4%);
+  background-color: var(--post-separator-color);
 }

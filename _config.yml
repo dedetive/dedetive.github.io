@@ -29,6 +29,7 @@ url: "https://dedetive.github.io/" # the base hostname & protocol for your site,
 github_username:    dedetive
 instagram_username: ded.etive
 bluesky_username:   ded-etive.bsky.social
+timezone: Brazil/East
 
 # Build settings
 theme: minima

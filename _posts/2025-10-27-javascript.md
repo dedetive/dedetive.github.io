@@ -11,15 +11,15 @@ May I ask why is the following `true`:
 ```js  
 100 * true ? 2 : 3 == 2  
 ```  
-<br>  
+<br>
 Oh no, sorry. That's not true.  
-<br><br>  
+  
 That equals 2.  
-<br><br>  
+<br>  
 And what happens if you fix the loose == and replace it with stricter ===?  
-<br><br>  
+
 Yeah, right. 2 again.  
-<br><br>  
+<br>  
 Please don't tell me multiplication with a BOOLEAN actually has precedence over ternary evaluation???  
 <br><br>  
 And don't even get me started on equality having higher precedence than a ternary.  

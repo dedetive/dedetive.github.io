@@ -15,8 +15,16 @@ layout: default
       {%- for post in site.posts -%}
       <li>
         <hr class="post-separator">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%m" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}
+        <span class="post-meta">
+          {{ post.date | date: date_format }}
+          {%- if post.categories -%}
+          &emsp;•&emsp;
+            {%- for category in post.categories -%}
+              {{ category }} {%- if category == post.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
+            {%- endfor -%}
+          {%- endif -%}
+        </span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}

@@ -9,4 +9,24 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
   {%- endif -%}
+
+    <script>
+        (function() {
+            const themeKey = 'theme-preference';
+            const light = window.matchMedia('(prefers-color-scheme: light)');
+
+            let preference = localStorage.getItem(themeKey);
+            let theme = 'dark';
+
+            if (preference === 'light') {
+                theme = 'light';
+            } else if (preference === null && light.matches) {
+                theme = 'light';
+            }
+
+            if (theme === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
 </head>
