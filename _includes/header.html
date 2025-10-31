@@ -45,7 +45,7 @@
             const toggle = document.getElementById('dark-mode-toggle');
             const htmlEl = document.documentElement;
 
-            toggle.checked = !htmlEl.classList.contains('light-mode');
+            toggle.checked = htmlEl.classList.contains('light-mode');
 
             toggle.addEventListener('change', function() {
                 if (this.checked) {
