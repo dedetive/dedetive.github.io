@@ -148,6 +148,26 @@
   }
 }
 
+@media (width <= 900px) {
+  .dark-mode-toggle {
+    display: none;
+  }
+
+  .dark-mode-toggle-icon {
+    .icon-light, .icon-dark {
+      display: none;
+    }
+
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+}
+
 /**
  * Site footer
  */
