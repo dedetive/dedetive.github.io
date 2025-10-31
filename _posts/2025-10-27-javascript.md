@@ -21,7 +21,7 @@ And what happens if you fix the loose == and replace it with stricter ===?
 Yeah, right. 2 again.  
 <br>  
 Please don't tell me multiplication with a BOOLEAN actually has precedence over ternary evaluation???  
-<br><br>  
+<br>  
 And don't even get me started on equality having higher precedence than a ternary.  
-<br><br>  
+<br>  
 Gotta really love parentheses to make anything useful in js, huh.
