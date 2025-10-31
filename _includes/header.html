@@ -23,19 +23,21 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+
+          <label class="dark-mode-toggle-label" for="dark-mode-toggle" aria-label="Toggle dark mode">
+            <span class="dark-mode-toggle-label-text">Toggle colorscheme</span>
+            <svg aria-hidden="true" class="dark-mode-toggle-icon">
+                <use class="icon-dark" xlink:href="{{ '/assets/misc-icons.svg#dark-mode' | relative_url }}"></use>
+
+                <use class="icon-light" xlink:href="{{ '/assets/misc-icons.svg#light-mode' | relative_url }}"></use>
+            </svg>
+        </label>
         </div>
       </nav>
     {%- endif -%}
     </div>
 
     <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
-    <label for="dark-mode-toggle" aria-label="Toggle dark mode">
-        <svg aria-hidden="true" class="dark-mode-toggle-icon">
-            <use class="icon-dark" xlink:href="{{ '/assets/misc-icons.svg#dark-mode' | relative_url }}"></use>
-
-            <use class="icon-light" xlink:href="{{ '/assets/misc-icons.svg#light-mode' | relative_url }}"></use>
-        </svg>
-    </label>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

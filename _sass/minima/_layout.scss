@@ -90,7 +90,7 @@
     }
 
     input:checked ~ .trigger {
-      display: none;
+      display: block;
       border-top: 2px solid var(--grey-color-dark);
       border-left: 2px solid var(--grey-color-dark);
       border-right: 2px solid var(--grey-color-dark);
@@ -108,11 +108,30 @@
         margin-right: 0;
       }
     }
+
+    .dark-mode-toggle-label-text {
+      display: flex;
+      padding: 5px 10px;
+      margin-right: 0;
+      line-height: $base-line-height;
+      color: var(--brand-color);
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      .dark-mode-toggle-icon {
+        display: none;
+      }
+    }
   }
 }
 
-@media (width >= 900px) {
-  .dark-mode-toggle {
+@media (width > 900px) {
+  .dark-mode-toggle,
+  .dark-mode-toggle-label-text {
     display: none;
   }
 
