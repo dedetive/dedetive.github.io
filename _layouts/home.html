@@ -18,6 +18,9 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}
         <span class="post-meta">
           {{ post.date | date: date_format }}
+          {%- if post.language -%}
+          &emsp;•&emsp; {{ post.language }}
+          {%- endif -%}
           {%- if post.categories -%}
           &emsp;•&emsp;
             {%- for category in post.categories -%}
