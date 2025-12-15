@@ -91,12 +91,12 @@
 
     input:checked ~ .trigger {
       display: block;
-      border-top: 2px solid var(--grey-color-dark);
-      border-left: 2px solid var(--grey-color-dark);
-      border-right: 2px solid var(--grey-color-dark);
-      border-bottom: 2px solid var(--grey-color-dark);
-      border-radius: 15% 15%;
-      box-shadow: 0 0 5px black;
+      border-top: 2px solid var(--background-color);
+      border-left: 2px solid var(--background-color);
+      border-right: 2px solid var(--background-color);
+      border-bottom: 2px solid var(--background-color);
+      border-radius: 0;
+      box-shadow: 2px 2px 5px 1px black;
       background-color: var(--background-color);
     }
 
@@ -114,7 +114,7 @@
       padding: 5px 10px;
       margin-right: 0;
       line-height: $base-line-height;
-      color: var(--brand-color);
+      color: var(--visited-link-color);
       text-decoration: none;
       cursor: pointer;
 
