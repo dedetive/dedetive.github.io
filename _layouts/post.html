@@ -16,6 +16,9 @@ layout: default
           {{ category }} {%- if category == page.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
         {%- endfor -%}
       {%- endif -%}
+      {%- if page.language -%}
+      &emsp;•&emsp; {{ page.language }}
+      {%- endif -%}
       {%- if page.author -%}
       &emsp;•&emsp;
         <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
