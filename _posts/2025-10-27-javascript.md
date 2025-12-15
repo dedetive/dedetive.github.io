@@ -5,6 +5,7 @@ date: 2025-10-27 16:09 -0300
 categories:
   - rant
 description: why just why
+language: English
 ---
 May I ask why is the following `true`:  
   

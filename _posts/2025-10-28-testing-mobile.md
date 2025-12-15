@@ -5,6 +5,7 @@ date: 2025-10-28 12:41 -0300
 categories:
   - boring
 description: I'm just trying out post writing on my phone
+language: English
 ---
 I'm just trying out post writing on my phone.
 <br>  
