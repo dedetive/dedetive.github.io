@@ -18,9 +18,6 @@ function normalizeLanguageAndFilter(param) {
         case 'br':
             filterByLanguage('Português');
             break;
-        default:
-            filterByLanguage(param.charAt(0).toUpperCase() + param.substring(1));
-            break;
     }
 }
 
