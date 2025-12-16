@@ -11,12 +11,13 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.language -%}
-      &emsp;•&emsp; {{ page.language }}
+      &emsp;•&emsp; <a class="post-meta-link" href="{{ my_page.url | relative_url }}/?language={{ post.language }}">{{ page.language }}</a>
       {%- endif -%}
       {%- if page.categories -%}
       &nbsp;&ensp;•&emsp;
         {%- for category in page.categories -%}
-          {{ category }} {%- if category == page.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
+          <a class="post-meta-link" href="{{ my_page.url | relative_url }}/?tag={{ category }}">{{ category }}</a>
+          {%- if category == page.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
         {%- endfor -%}
       {%- endif -%}
       {%- if page.author -%}
