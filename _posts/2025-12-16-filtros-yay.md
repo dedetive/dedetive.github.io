@@ -17,18 +17,16 @@ eu poderia ter feito de algum jeito melhor, mas assim já tá ótimo
 
 depois se der vontade eu deixo isso melhor
 <br>  
-eu usei:
+Eu usei:
 ```js  
 const element = document.getElementById('post-list');  
 for (const child of element.children) {  
     if (child.lang !== language) child.style.display = 'none';  
 }
 ```  
-<br>  
 pra linguagens, e algo bem similar pras tags.
+Mas isso introduz alguns problemas, como não ser possível filtrar por uma língua <em>e</em> uma ou mais tags ao mesmo tempo.
+Mas mesmo assim, para o que eu tenho agora isso é o suficiente.
 <br>  
-isso introduz alguns problemas, como não ser possível filtrar por uma língua <em>e<em> uma ou mais tags ao mesmo tempo.
-porém, para o que eu tenho agora isso é o suficiente
 <br>  
-<br>  
-woof :3
+<em>woof :3</em>
