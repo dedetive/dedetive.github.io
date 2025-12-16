@@ -31,4 +31,4 @@ Mas isso introduz alguns problemas, como não ser possível filtrar por uma lín
 Mas mesmo assim, para o que eu tenho agora isso é o suficiente.
 <br>  
 <br>  
-<b><em>woof :3</em></b>
+<em>woof :3</em>
