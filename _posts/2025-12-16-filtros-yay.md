@@ -25,7 +25,9 @@ for (const child of element.children) {
 }
 ```  
 pra linguagens, e algo bem similar pras tags.
+
 Mas isso introduz alguns problemas, como não ser possível filtrar por uma língua <em>e</em> uma ou mais tags ao mesmo tempo.
+
 Mas mesmo assim, para o que eu tenho agora isso é o suficiente.
 <br>  
 <br>  
