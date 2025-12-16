@@ -11,10 +11,10 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Thoughts" }}</h2>
-    <ul class="post-list">
+    <ul class="post-list" id="post-list">
       {%- for post in site.posts -%}
       {% assign post_language = post.language %}
-      <li class="{{ post_language }}">
+      <li lang="{{ post_language }}">
         <hr class="post-separator">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}
         <span class="post-meta">
@@ -44,5 +44,7 @@ layout: default
     </ul>
 
   {%- endif -%}
+
+  <script src="/assets/js/language_filter.js"></script>
 
 </div>
