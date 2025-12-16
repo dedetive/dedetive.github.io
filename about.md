@@ -13,13 +13,13 @@ i used this as template and then tweaked it:
 [minima](https://github.com/jekyll/minima)
 
 also heres jekyll itself:
-[jekyll GitHub user][jekyll-organization] /
+[jekyll GitHub user](jekyll-organization) /
 [jekyll repo](https://github.com/jekyll/jekyll)
 
 i hope that helps! :D
-
-i might write more later idk not now though im handling other stuff
 <br>
+i might write more later idk not now though im handling other stuff
+<br><br>
 trans rights are humans rights
 <br>
 <em>woof :3</em>
