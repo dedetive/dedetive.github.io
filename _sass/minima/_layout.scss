@@ -288,11 +288,16 @@
   }
 }
 
-.post-meta {
+.post-meta, .post-meta-link {
   margin: 15px 0 0 0;
   font-size: $small-font-size;
   font-weight: 500;
-  color: var(--post-meta-color);
+  color: var(--post-meta-color) !important;
+  transition: none;
+
+  *:hover {
+    color: var(--text-color) !important;
+  }
 }
 
 .post-link {

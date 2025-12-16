@@ -19,12 +19,13 @@ layout: default
         <span class="post-meta">
           {{ post.date | date: date_format }}
           {%- if post.language -%}
-          &emsp;•&emsp; {{ post.language }}
+          &emsp;•&emsp; <a class="post-meta-link" href="{{ my_page.url | relative_url }}/?language={{ post.language }}">{{ post.language }}</a>
           {%- endif -%}
           {%- if post.categories -%}
           &emsp;•&emsp;
             {%- for category in post.categories -%}
-              {{ category }} {%- if category == post.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
+              <a class="post-meta-link" href="{{ my_page.url | relative_url }}/?tag={{ category }}">{{ category }}</a>
+              {%- if category == post.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
             {%- endfor -%}
           {%- endif -%}
         </span>
