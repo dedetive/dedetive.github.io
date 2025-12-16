@@ -10,14 +10,14 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}
         {{ page.date | date: date_format }}
       </time>
+      {%- if page.language -%}
+      &emsp;•&emsp; {{ page.language }}
+      {%- endif -%}
       {%- if page.categories -%}
       &nbsp;&ensp;•&emsp;
         {%- for category in page.categories -%}
           {{ category }} {%- if category == page.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
         {%- endfor -%}
-      {%- endif -%}
-      {%- if page.language -%}
-      &emsp;•&emsp; {{ page.language }}
       {%- endif -%}
       {%- if page.author -%}
       &emsp;•&emsp;
