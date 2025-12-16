@@ -1,9 +1,11 @@
 const urlParams = new URLSearchParams(window.location.search);
-const myParam = urlParams.get('language');
+const language = urlParams.get('language');
+const tag = urlParams.get('tag');
 
-normalize(myParam);
+normalizeLanguage(language);
+filterByTag(tag);
 
-function normalize(param) {
+function normalizeLanguage(param) {
     if (param == null) return;
 
     switch (param.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) {
@@ -26,5 +28,15 @@ function filterByLanguage(language) {
     const element = document.getElementById('post-list');
     for (const child of element.children) {
         if (child.lang !== language) child.style.display = 'none';
+    }
+}
+
+function filterByTag(tag) {
+    if (tag == null) return;
+
+    const element = document.getElementById('post-list');
+    for (const child of element.children) {
+        console.log(child.getAttribute('tags'));
+        if (!child.getAttribute('tags').includes(tag)) child.style.display = 'none';
     }
 }

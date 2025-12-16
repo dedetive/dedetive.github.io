@@ -14,7 +14,8 @@ layout: default
     <ul class="post-list" id="post-list">
       {%- for post in site.posts -%}
       {% assign post_language = post.language %}
-      <li lang="{{ post_language }}">
+      {% assign post_tags = post.categories %}
+      <li lang="{{ post_language }}" tags="{{ post_tags }}">
         <hr class="post-separator">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}
         <span class="post-meta">
