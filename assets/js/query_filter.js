@@ -36,7 +36,6 @@ function filterByTag(tag) {
 
     const element = document.getElementById('post-list');
     for (const child of element.children) {
-        console.log(child.getAttribute('tags'));
         if (!child.getAttribute('tags').includes(tag)) child.style.display = 'none';
     }
 }
