@@ -11,17 +11,21 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Thoughts" }}</h2>
-    <ul class="post-list">
+    <ul class="post-list" id="post-list">
       {%- for post in site.posts -%}
-      <li>
+      <li lang="{{ post.language }}" tags="{{ post.categories }}">
         <hr class="post-separator">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}
         <span class="post-meta">
           {{ post.date | date: date_format }}
+          {%- if post.language -%}
+          &emsp;•&emsp; <a class="post-meta-link" href="{{ my_page.url | relative_url }}/?language={{ post.language }}">{{ post.language }}</a>
+          {%- endif -%}
           {%- if post.categories -%}
           &emsp;•&emsp;
             {%- for category in post.categories -%}
-              {{ category }} {%- if category == post.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
+              <a class="post-meta-link" href="{{ my_page.url | relative_url }}/?tag={{ category }}">{{ category }}</a>
+              {%- if category == post.categories.last -%} {%- break -%} {%- endif -%},&nbsp;
             {%- endfor -%}
           {%- endif -%}
         </span>
@@ -40,5 +44,7 @@ layout: default
     </ul>
 
   {%- endif -%}
+
+  <script src="/assets/js/query_filter.js"></script>
 
 </div>
