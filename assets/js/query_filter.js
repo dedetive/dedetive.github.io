@@ -2,10 +2,10 @@ const urlParams = new URLSearchParams(window.location.search);
 const language = urlParams.get('language');
 const tag = urlParams.get('tag');
 
-normalizeLanguage(language);
+normalizeLanguageAndFilter(language);
 filterByTag(tag);
 
-function normalizeLanguage(param) {
+function normalizeLanguageAndFilter(param) {
     if (param == null) return;
 
     switch (param.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) {
