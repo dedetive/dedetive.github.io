@@ -15,6 +15,7 @@ function normalizeLanguageAndFilter(param, alternativeParam) {
         case 'en':
             filterByLanguage('English');
             break;
+        case 'portuguese':
         case 'portugues':
         case 'pt':
         case 'br':
