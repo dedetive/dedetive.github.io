@@ -7,23 +7,24 @@ permalink: /about/
 meow
 
 this is the repository this is being hosted on:
-[my main repo](https://github.com/dedetive)
+[my main repo](https://github.com/dedetive.github.io)
 
-i used this as template and then tweaked it:
-[jekyll][jekyll-organization] /
+And this is my profile:
+[my GitHub profile](https://github.com/dedetive/dedetive.github.io)
+
+i used this as template and then heavily modified it:
 [minima](https://github.com/jekyll/minima)
 
 also heres jekyll itself:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+[jekyll GitHub user](https://github.com/jekyll/) /
+[jekyll repo](https://github.com/jekyll/jekyll)
 
 i hope that helps! :D
-
+<br>
 i might write more later idk not now though im handling other stuff
-
-trans rights are humans rights
 <br><br>
-Made on Oct 24, 2025
+trans rights are humans rights
+<br>
+> <em>woof :3</em>
+<br><br>
+Made on Oct 24, 2025, by ded(0)

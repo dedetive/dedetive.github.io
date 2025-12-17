@@ -4,6 +4,7 @@ title: Short js rant
 date: 2025-10-27 16:09 -0300
 categories:
   - rant
+  - coding
 description: why just why
 language: English
 ---
