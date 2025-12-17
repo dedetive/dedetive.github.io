@@ -25,6 +25,6 @@ i might write more later idk not now though im handling other stuff
 <br><br>
 trans rights are humans rights
 <br>
-<em>woof :3</em>
+> <em>woof :3</em>
 <br><br>
 Made on Oct 24, 2025, by ded(0)
