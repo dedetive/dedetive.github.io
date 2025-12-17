@@ -7,13 +7,16 @@ permalink: /about/
 meow
 
 this is the repository this is being hosted on:
-[my main repo](https://github.com/dedetive)
+[my main repo](https://github.com/dedetive.github.io)
 
-i used this as template and then tweaked it:
+And this is my profile:
+[my GitHub profile](https://github.com/dedetive/dedetive.github.io)
+
+i used this as template and then heavily modified it:
 [minima](https://github.com/jekyll/minima)
 
 also heres jekyll itself:
-[jekyll GitHub user](jekyll-organization) /
+[jekyll GitHub user](https://github.com/jekyll/) /
 [jekyll repo](https://github.com/jekyll/jekyll)
 
 i hope that helps! :D
