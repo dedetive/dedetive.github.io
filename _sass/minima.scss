@@ -24,7 +24,7 @@ $dark-grey-color-brighter: lighten($dark-grey-color, 10%) !default;
 $dark-grey-color-darker:  darken($dark-grey-color, 20%) !default;
 $dark-code-background-color: #20251a !default;
 $dark-code-border-color: saturate($dark-brand-color, 50%) !default;
-$dark-post-meta-color: desaturate(lighten($dark-background-color, 35%), 15%) !default;
+$dark-post-meta-color: desaturate(lighten($dark-background-color, 38%), 15%) !default;
 $dark-post-description-color: #fff !default;
 $dark-post-separator-color: lighten($dark-background-color, 4%) !default;
 $dark-post-link-color: #cbf6cf !default;
