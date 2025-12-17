@@ -17,7 +17,10 @@ layout: default
         <hr class="post-separator">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}
         <span class="post-meta">
-          {{ post.date | date: date_format }}
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}
+            {{ post.date | date: date_format }}
+          </time>
           {%- if post.language -%}
           &emsp;•&emsp; <a class="post-meta-link" href="{{ my_page.url | relative_url }}/?language={{ post.language }}">{{ post.language }}</a>
           {%- endif -%}
