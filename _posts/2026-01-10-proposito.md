@@ -12,7 +12,7 @@ author: ded(1)
  <br>  
 Pra ser honesta, isso tudo começou como um experimento. Eu só queria testar como o [GitHub Pages](https://pages.github.com/) funcionava. Mas então eu comecei a me adentrar em [Jekyll](https://jekyllrb.com/), páginas estáticas e programação web um pouco além do básico, e me diverti criando o CLAB.
 <br>  
-No começo, a maioria me parecia novo e que eu ainda estava arranhando a superfície de webdev. Antes disso, eu tive e mantive um projeto de arte pessoal hospedado no [Vercel](https://vercel.com/docs) sustentado pelo plugin [Digital Garden](https://github.com/oleeskild/obsidian-digital-garden)do [Obsidian](https://obsidian.md/). Passados alguns meses, e eu usei esse mesmo domínio do Vercel para hospedar alguns projetos pequenos e muitos específicos para ajudar uns amigos a jogar RPG. E, então, eu usei o <i>mesmo</i> domínio para hospedar outro projeto um pouco maior, que até usava webhooks para ser atualizado automaticamente baseado em certos eventos do Discord. 
+No começo, quase tudo me parecia novo e que eu ainda estava arranhando a superfície de webdev. Antes disso, eu tive e mantive um projeto de arte pessoal hospedado no [Vercel](https://vercel.com/docs) sustentado pelo plugin [Digital Garden](https://github.com/oleeskild/obsidian-digital-garden) do [Obsidian](https://obsidian.md/). Passados alguns meses, eu usei esse mesmo domínio do Vercel para hospedar alguns projetos pequenos e muito específicos para ajudar uns amigos a jogar RPG. E, então, eu usei o <i>mesmo</i> domínio para hospedar outro projeto um pouco maior, que até usava webhooks para ser atualizado automaticamente baseado em certos eventos do Discord. 
 
 
 É, você provavelmente já consegue adivinhar. Era bagunçado, e eu era inexperiente.
@@ -21,7 +21,7 @@ O tempo foi passando, até que por volta de outubro de 2025 eu senti uma vontade
 <br>  
 E aliás, ser capaz de levantar tudo isso do chão completamente sozinha agrega lindamente na minha experiência. Principalmente pelo fato que eu não usei IA generativa em nenhum ponto. O máximo que eu a usei foi para descobrir comportamentos obscuros de [SCSS](https://sass-lang.com/), que seria complicado ler os docs pra resolver os meus problemas, já que eu precisava fazer algo que eu nem tinha o vocabulário necessário ainda. Mas no final das contas, eu aprendi :). Eu não deixei IA alguma fazer o meu trabalho.
 <br>  
-Resumindo, fundar CLAB foi uma experiência muito prazerosa e recompensadora, e eu estou muito orgulhosa disso :3
+Resumindo, fundar o CLAB foi uma experiência muito prazerosa e recompensadora, e eu estou muito orgulhosa disso :3
 
 
 Eu vou continuar trazendo atualizações, mas tão irregularmente quanto eu já estou fazendo. Eu não sei se alguém vai ler isso, mas eu ficaria muito grata! Muito obrigada, de coração! Amo vocês!!!! :3
