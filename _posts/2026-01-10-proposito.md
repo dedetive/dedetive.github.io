@@ -4,7 +4,7 @@ title: Propósito
 date: 2026-01-10 19:42 -0300
 categories:
   - actually-serious
-description: Quais as minhas intenções com o CLAB<br><br>Essa é uma tradução do post titulado Purpose
+description: Quais as minhas intenções com o CLAB<br><br>Essa é uma tradução em português do post titulado Purpose
 language: Português
 author: ded(1)
 ---
