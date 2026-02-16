@@ -30,6 +30,7 @@ github_username:    dedetive
 instagram_username: ded.etive
 bluesky_username:   ded-etive.bsky.social
 timezone: Brazil/East
+permalink: /thoughts/:year/:month/:day/:title.uwu
 
 # Build settings
 theme: minima
