@@ -6,13 +6,13 @@ permalink: /about/
 
 meow
 
-this is the repository this is being hosted on:
+check out the repo this is hosted on:
 [my main repo](https://github.com/dedetive.github.io)
 
-And this is my profile:
+And heres my profile:
 [my GitHub profile](https://github.com/dedetive/dedetive.github.io)
 
-i used this as template and then heavily modified it:
+i used this template, though heavily modified:
 [minima](https://github.com/jekyll/minima)
 
 also heres jekyll itself:
