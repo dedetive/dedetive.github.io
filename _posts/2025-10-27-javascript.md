@@ -6,7 +6,7 @@ categories:
   - rant
   - coding
 description: why just why
-language: English
+language: english
 ---
 May I ask why is the following `true`:  
   

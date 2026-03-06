@@ -6,7 +6,7 @@ categories:
   - fun
   - coding
 description: prontooooo
-language: Português
+language: portugues
 author: ded(0)
 ---
 prontinhoooooooooooooo :3

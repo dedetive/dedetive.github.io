@@ -5,7 +5,7 @@ date: 2026-01-10 19:42 -0300
 categories:
   - actually-serious
 description: Quais as minhas intenções com o CLAB<br><br>Essa é uma tradução em português do post titulado Purpose
-language: Português
+language: portugues
 author: ded(1)
 ---
  Eu ainda não havia explicado o que eu planejava ao criar esse blog. Mas cá estou eu!
