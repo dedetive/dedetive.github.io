@@ -13,13 +13,13 @@ function normalizeLanguageAndFilter(param, alternativeParam) {
     switch (param.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) {
         case 'english':
         case 'en':
-            filterByLanguage('English');
+            filterByLanguage('english');
             break;
         case 'portuguese':
         case 'portugues':
         case 'pt':
         case 'br':
-            filterByLanguage('Português');
+            filterByLanguage('portugues');
             break;
     }
 }
