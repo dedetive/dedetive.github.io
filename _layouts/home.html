@@ -10,8 +10,8 @@ layout: default
   <div class="post-filter-parent">
       <div class="post-filter-child"><span class="post-filter-header">Tags</span>
         {% for category in site.categories %}
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        <a href="{{site.baseurl}}/?tag={{category_name}}" class="post-filter-entry">{{category_name}}</a>
+          {% capture category_name %}{{ category | first }}{% endcapture %}
+          <br><a href="{{site.baseurl}}/?tag={{category_name}}" class="post-filter-entry">{{category_name}}</a>
         {% endfor %}
       </div>
 
@@ -19,7 +19,7 @@ layout: default
         {% assign languages = site.posts | group_by: "language" %}
         {% for language in languages %}
           {% capture language_name %}{{ language | first | last }}{% endcapture %}
-          <a href="{{site.baseurl}}/?language={{language_name}}" class="post-filter-entry">{{language_name | capitalize}}</a>
+          <br><a href="{{site.baseurl}}/?language={{language_name}}" class="post-filter-entry">{{language_name | capitalize}}</a>
         {% endfor %}
       </div>
     </div>
