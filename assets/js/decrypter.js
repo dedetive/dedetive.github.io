@@ -8,6 +8,8 @@ function decryptPost() {
     const hash = window.location.hash.substring(1);
     const params = new URLSearchParams(hash);
     const secretKey = params.get('key');
+    const cleanUrl = window.location.pathname + window.location.search;
+    history.replaceState(null, "", cleanUrl);
 
     if (!secretKey) {
         document.getElementById('post-content').innerHTML = "This post is encrypted!<br><br>Try asking dedetive if you think this is for you. She might give you the key.";
