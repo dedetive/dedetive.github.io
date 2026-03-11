@@ -383,3 +383,40 @@ hr {
   height: 1px;
   background-color: var(--post-separator-color);
 }
+
+/**
+ * filters
+ */
+
+@media (width >= 1500px) {
+  .post-filter-parent {
+    display: flex;
+    width: auto;
+    position: absolute;
+    left: 8%;
+    top: 172.5px;
+    max-width: fit-content;
+  }
+
+  .post-filter-child {
+    margin-right: 15px;
+  }
+
+  .post-filter-header {
+    @include relative-font-size(1.2);
+  }
+
+  .post-filter-entry {}
+}
+
+@media (width < 1500px) {
+  .post-filter-parent {
+    display: none;
+  }
+
+  .post-filter-child {}
+
+  .post-filter-header {}
+
+  .post-filter-entry {}
+}

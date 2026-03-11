@@ -7,12 +7,32 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
+  <div class="post-filter-parent">
+      <div class="post-filter-child"><span class="post-filter-header">Tags</span>
+        {% for category in site.categories %}
+          {% capture category_name %}{{ category | first }}{% endcapture %}
+          <br><a href="{{site.baseurl}}/?tag={{category_name}}" class="post-filter-entry">{{category_name}}</a>
+        {% endfor %}
+      </div>
+
+      <div class="post-filter-child"><span class="post-filter-header">Languages</span>
+        {% assign languages = site.posts | group_by: "language" %}
+        {% for language in languages %}
+          {% capture language_name %}{{ language | first | last }}{% endcapture %}
+          <br><a href="{{site.baseurl}}/?language={{language_name}}" class="post-filter-entry">{{language_name | capitalize}}</a>
+        {% endfor %}
+      </div>
+    </div>
+
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Thoughts" }}</h2>
     <ul class="post-list" id="post-list">
       {%- for post in site.posts -%}
+      {%- if post.hidden or (post.encrypted and post.hidden == nil) -%}
+        {%- continue -%}
+      {%- endif -%}
       <li lang="{{ post.language }}" tags="{{ post.categories }}">
         <hr class="post-separator">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" -%}

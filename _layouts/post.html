@@ -26,7 +26,7 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="post-content e-content" itemprop="articleBody" id="post-content">
     {{ content }}
   </div>
 
@@ -36,3 +36,11 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+{%- if page.encrypted -%}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="/assets/js/decrypter.js"></script>
+{%- elsif page.encrypt -%}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="/assets/js/encrypter.js"></script>
+{%- endif -%}
