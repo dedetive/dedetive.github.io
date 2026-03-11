@@ -30,7 +30,7 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title | default: "Thoughts" }}</h2>
     <ul class="post-list" id="post-list">
       {%- for post in site.posts -%}
-      {%- if post.hidden -%}
+      {%- if post.hidden or (post.encrypted and post.hidden == nil) -%}
         {%- continue -%}
       {%- endif -%}
       <li lang="{{ post.language }}" tags="{{ post.categories }}">
