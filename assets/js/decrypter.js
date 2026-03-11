@@ -4,8 +4,9 @@ let sanitizedPostContent = postContent.trim();
 sanitizedPostContent = sanitizedPostContent.replace("<p>", "")
 sanitizedPostContent = sanitizedPostContent.replace("</p>", "")
 
-const urlParams = new URLSearchParams(window.location.search);
-const secretKey = urlParams.get('key');
+const hash = window.location.hash.substring(1);
+const params = new URLSearchParams(hash);
+const secretKey = params.get('key');
 
 if (!secretKey) {
     document.getElementById('post-content').innerHTML = "This post is encrypted!<br><br>Try asking dedetive if you think this is for you. She might give you the key.";
