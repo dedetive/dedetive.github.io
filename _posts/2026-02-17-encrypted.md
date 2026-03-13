@@ -4,6 +4,7 @@ title: encryption test
 date: 2026-03-08 16:09 -0300
 categories:
   - coding
+  - fun
 description: Try adding '#key=123' to the url of this post :3
 language: english
 encrypted: true
