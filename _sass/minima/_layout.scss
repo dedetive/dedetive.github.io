@@ -425,8 +425,31 @@ hr {
  * Copy code blocks
  */
 
-.copy-code-button {
-  display: block;
+@media (width > 900px) {
+  .code-header {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .copy-code-button {
+    visibility: visible;
+    display: flex;
+    transform: translateX(-70px);
+    background: none;
+    color: var(--copy-code-button-text-color);
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-variant: all-petite-caps;
+    block-size: 30px;
+    @include relative-font-size(1.2);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--copy-code-button-text-hover-color);
+    }
+  }
 }
 
 @media (width <= 900px) {
