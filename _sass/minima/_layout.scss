@@ -428,3 +428,9 @@ hr {
 .copy-code-button {
   display: block;
 }
+
+@media (width <= 900px) {
+  .code-header {
+    display: none;
+  }
+}
