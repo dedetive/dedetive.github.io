@@ -15,7 +15,7 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
     copyCodeButton.addEventListener('click', () => {
         window.navigator.clipboard.writeText(code);
         const { innerText: originalText } = copyCodeButton;
-        copyCodeButton.innerText = 'Copied!';
+        copyCodeButton.innerText = 'COPIED!';
         copyCodeButton.classList.add('copied');
         setTimeout(() => {
             copyCodeButton.innerText = originalText;
