@@ -28,6 +28,8 @@ html {
   --footer-separator-color: #{$dark-footer-separator-color};
   --scrollbar-thumb-color: #{$dark-scrollbar-thumb-color};
   --scrollbar-track-color: #{$dark-scrollbar-track-color};
+  --copy-code-button-text-color: #{$dark-copy-code-button-text-color};
+  --copy-code-button-text-hover-color: #{$dark-copy-code-button-text-hover-color};
 }
 
 html.light-mode {
@@ -50,6 +52,8 @@ html.light-mode {
   --footer-separator-color: #{$light-footer-separator-color};
   --scrollbar-thumb-color: #{$light-scrollbar-thumb-color};
   --scrollbar-track-color: #{$light-scrollbar-track-color};
+  --copy-code-button-text-color: #{$light-copy-code-button-text-color};
+  --copy-code-button-text-hover-color: #{$light-copy-code-button-text-hover-color};
 }
 
 /**
