@@ -12,7 +12,7 @@ Thank you for coming to this page and reading this! Further thanks if you happen
 <br><br>
 Monero (XMR) address:<br>
 `87dnTTqxhhfCE7pmEuSjL79Mxdf5Fz1e8Yczzh1hhX573THR8WjmVbEDTUCk9cG2obYajw8wkiezn8zvUGvtk5Yp3UxtXwa`
-<br><br>
+<br>
 Bitcoin (BTC) address:<br>
 `bc1q8t6daxmz0366vs4rvjxvfpv8ufkdwlwap0usca`
 
