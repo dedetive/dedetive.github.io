@@ -31,6 +31,8 @@ $dark-post-link-color: #cbf6cf !default;
 $dark-footer-separator-color: saturate(lighten($dark-background-color, 40%), 10%) !default;
 $dark-scrollbar-thumb-color: lighten($dark-background-color, 6%) !default;
 $dark-scrollbar-track-color: darken($dark-background-color, 3%) !default;
+$dark-copy-code-button-text-color: #7eaf27 !default;
+$dark-copy-code-button-text-hover-color: #b5ffb6 !default;
 
 $light-text-color: #000000 !default;
 $light-site-title-color: #006e16 !default;
@@ -51,6 +53,8 @@ $light-post-link-color: #002889 !default;
 $light-footer-separator-color: saturate(darken($light-background-color, 45%), 30%) !default;
 $light-scrollbar-thumb-color: darken($light-background-color, 12%) !default;
 $light-scrollbar-track-color: lighten($light-background-color, 8%) !default;
+$light-copy-code-button-text-color: #1a7991 !default;
+$light-copy-code-button-text-hover-color: #85c200 !default;
 
 $table-text-align: left !default;
 
