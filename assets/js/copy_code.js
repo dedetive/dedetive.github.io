@@ -5,7 +5,12 @@ codeBlocks.forEach(codeBlock => {
     let copyCodeButton = document.createElement("div");
     copyCodeButton.innerHTML =`{% include code-header.html %}`
     copyCodeButton.classList.add('code-header');
-    codeBlock.after(copyCodeButton);
+    let auxElement = codeBlock;
+    // find higher code thingy if its nested
+    while (!(auxElement.classList.contains('highlighter-rouge'))) auxElement = auxElement.parentElement;
+    // before any possible pure text
+    while (auxElement.previousSibling && auxElement.previousSibling.nodeType === 3) auxElement = auxElement.previousSibling;
+    auxElement.before(copyCodeButton);
 })
 const copyCodeButtons = document.querySelectorAll('.copy-code-button');
 
