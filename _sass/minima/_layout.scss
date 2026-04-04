@@ -426,6 +426,7 @@ hr {
  */
 
 @media (width > 900px) {
+
   .code-header {
     visibility: hidden;
     position: absolute;
@@ -456,4 +457,10 @@ hr {
   .code-header {
     display: none;
   }
+}
+
+code {
+  max-width: fit-content;
+  display: inline-block;
+  overflow-wrap: anywhere;
 }
