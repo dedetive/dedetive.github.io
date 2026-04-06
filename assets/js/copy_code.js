@@ -15,7 +15,8 @@ codeBlocks.forEach(codeBlock => {
 const copyCodeButtons = document.querySelectorAll('.copy-code-button');
 
 copyCodeButtons.forEach((copyCodeButton, index) => {
-    const code = codeBlocks[index].innerText;
+    let code = codeBlocks[index].innerText;
+    if (code.lastIndexOf('\n') === (code.length - 1)) code = code.substring(0, code.length - 1);
 
     copyCodeButton.addEventListener('click', () => {
         window.navigator.clipboard.writeText(code);
