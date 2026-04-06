@@ -11,7 +11,7 @@ language: english
 May I ask why is the following `true`:  
   
 ```js  
-100 * true ? 2 : 3 == 2  
+100 * true ? 2 : 3 == 2
 ```  
 <br>
 Oh no, sorry. That's not true.  
