@@ -25,7 +25,7 @@ email: dedetive+clab@arwuf.fyi
 description: >- # this means to ignore newlines until "baseurl:"
   my personal site yay!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dedetive.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://arwuf.fyi/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:    dedetive
 instagram_username: ded.etive
 bluesky_username:   ded-etive.bsky.social
