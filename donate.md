@@ -18,4 +18,6 @@ Bitcoin (BTC) address:<br>
 `bc1q8t6daxmz0366vs4rvjxvfpv8ufkdwlwap0usca`
 
 <br>
+Thank you v much once again!!!! kthxbyez
+<br>
 > <em>woof :3</em>
